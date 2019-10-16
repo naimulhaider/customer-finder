@@ -6,7 +6,7 @@ import (
 	"github.com/naimulhaider/customer-finder/models"
 )
 
-// LogCustomersSortedByID reads all data from the channel, sorts the list and then logs it to console
+// LogCustomersSortedByID reads all customer data from the channel, sorts the list and then prints it to console
 func LogCustomersSortedByID(customers <-chan models.Customer) <-chan bool {
 	done := make(chan bool, 1)
 

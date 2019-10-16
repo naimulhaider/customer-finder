@@ -5,11 +5,11 @@ The program parses customer data as JSON, malformed lines are logged to the cons
 Output: The ID and Name of customers found within the given Search Radius.
 
 ```
-Customer Definition
-- ID
-- Name
-- Longitude
-- Latitude
+Customer JSON Data Definition:
+- id (Number)
+- name (String)
+- latitude (String)
+- longitude (String)
 ```
 
 Usage:

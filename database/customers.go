@@ -18,6 +18,7 @@ func NewCustomers(dir string) (c Customers) {
 	return
 }
 
+// GetAllCustomers responds with channels containing all customers and errors
 func (c Customers) GetAllCustomers() (<-chan models.Customer, <-chan error) {
 
 	customers := make(chan models.Customer)

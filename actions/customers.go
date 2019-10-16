@@ -15,6 +15,7 @@ func NewCustomer(repo database.Customers) Customer {
 	}
 }
 
+// GetAllCustomersWithinSearchRadiusFrom responds with channels containing customers within given search radius and errors
 func (c Customer) GetAllCustomersWithinSearchRadiusFrom(source models.Location, searchRadius float64) (<-chan models.Customer, <-chan error) {
 
 	allCustomers, errors := c.repo.GetAllCustomers()

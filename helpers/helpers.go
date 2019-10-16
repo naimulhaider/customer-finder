@@ -8,6 +8,7 @@ const (
 	EARTH_RADIUS = 6371 // km
 )
 
+// DegToRadian converts value from degree to radian
 func DegToRadian(deg float64) float64 {
 	return deg * math.Pi / 180
 }

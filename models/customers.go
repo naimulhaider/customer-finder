@@ -21,7 +21,7 @@ type Customer struct {
 	Location
 }
 
-// UnmarshalJSON
+// UnmarshalJSON parses the json file data to customer model
 func (c *Customer) UnmarshalJSON(data []byte) error {
 	jsonData := struct {
 		UserID    int64  `json:"user_id"`
